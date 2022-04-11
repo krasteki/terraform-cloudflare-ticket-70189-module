@@ -1,4 +1,4 @@
-/*
+
 terraform {
   required_providers {
     cloudflare = {
@@ -7,7 +7,7 @@ terraform {
     }
   }
 }
-*/
+
 
 provider "cloudflare" {
   email   = var.my_mail
@@ -20,8 +20,10 @@ output "source_rng" {
     value = data.cloudflare_ip_ranges.cloudflare.ipv4_cidr_blocks
 }
 
+
 variable "my_mail" { 
 }
 
 variable "my_token" { 
 }
+
