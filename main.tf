@@ -1,4 +1,4 @@
-/*
+
 terraform {
   required_providers {
     cloudflare = {
@@ -7,7 +7,7 @@ terraform {
     }
   }
 }
-*/
+
 
 provider "cloudflare" {
   email   = var.my_mail
