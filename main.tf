@@ -16,6 +16,7 @@ provider "cloudflare" {
 
 data "cloudflare_ip_ranges" "cloudflare" {}
 
+
 output "source_rng" {
     value = data.cloudflare_ip_ranges.cloudflare.ipv4_cidr_blocks
 }
@@ -26,4 +27,5 @@ variable "my_mail" {
 
 variable "my_token" { 
 }
+
 
